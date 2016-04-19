@@ -6,6 +6,7 @@ section .data
   
 section .bss
   inp_buffer resb 256
+  pop_buffer resb 255
 
 section .text
   global _start
@@ -28,6 +29,7 @@ _start:
   mov eax,4
   mov ebx,1
   mov ecx,hi
+  add ecx,inp_buffer
   mov edx,hiLen
   int 80h
 
