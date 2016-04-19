@@ -6,7 +6,6 @@ section .data
   
 section .bss
   inp_buffer resb 256
-  pop_buffer resb 255
 
 section .text
   global _start
